@@ -1,0 +1,413 @@
+/* Overall */
+.master {
+  background-color: #f8f8f8;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding-top: 64px;
+  padding-left: 150px;
+}
+
+/* Sidenav */
+.sidenav {
+  background-image: linear-gradient(#181818, #040404);
+  width: 150px;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  overflow-x: hidden;
+}
+
+/*Sidenav Brand */
+.sidenav-brand {
+  background: #040404;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 65px;
+  width: 150px;
+}
+
+.sidenav-brand-name {
+  font-family: "Forum", cursive;
+  color: white;
+  text-align: center;
+  margin: 20px 15px 10px 40px;
+  font-size: 25px;
+}
+
+/*Sidenav Profile */
+.sidenav-profile {
+  background: #2b2b2b;
+  height: 80px;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #343434;
+  display: flex;
+}
+
+.sidenav-profile-image {
+  width: 50px;
+  border-radius: 5px;
+  margin: 15px 0px 0px 15px;
+}
+
+.sidenav-user-info {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px 0px 10px;
+}
+
+.sidenav-username {
+  color: white;
+  font-size: 12px;
+}
+
+.sidenav-user-location {
+  color: white;
+  font-size: 12px;
+}
+
+/* Sidenav Menu */
+.sidenav ul {
+  padding-left: 2px;
+}
+
+.sidenav li {
+  padding: 10px;
+}
+
+.sidenav-menu-item {
+  color: white;
+  font-size: 12px;
+}
+
+.sidenav li:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+.sidenav p {
+  float: left;
+}
+
+.sidenav-word {
+  margin-left: 30px;
+}
+
+.sidenav-icon {
+  margin: 0px 0px 0px 15px;
+}
+
+/* Top Navigation */
+.topnav {
+  background: white;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 150px;
+  overflow: hidden;
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #d9d9d9;
+  z-index: 999;
+}
+
+.topnav a {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 20px 0px 20px;
+}
+
+.topnav a:hover {
+  color: #040404;
+  font-weight: 5px;
+}
+
+.topnav-menu {
+  list-style-type: none;
+  margin-left: 50px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topnav-menu a {
+  color: #5a5a5a;
+}
+
+.topnav-menu a:hover {
+  color: #040404;
+}
+
+.topnav button {
+  float: right;
+  margin-right: 25%;
+  border: solid;
+  border-color: #040404;
+  border-width: 1px;
+  color: #040404;
+  background: none;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.topnav button:hover {
+  background: #040404;
+  color: whitesmoke;
+}
+
+/* Navigation Tablet View */
+@media only screen and (max-width: 900px) {
+  body {
+    padding-top: 64px;
+    padding-left: 70px;
+  }
+
+  .sidenav {
+    width: 60px;
+  }
+
+  .topnav {
+    position: fixed;
+    left: 50px;
+    min-width: 900px;
+  }
+
+  .sidenav-brand {
+    width: 60px;
+  }
+
+  .sidenav-brand-name {
+    font-size: 18px;
+    margin: 20px 8px;
+  }
+
+  .sidenav-word {
+    display: none;
+  }
+
+  .sidenav-username {
+    display: none;
+  }
+
+  .sidenav-profile-image {
+    width: 40px;
+    border-radius: 2px;
+    margin: 20px 10px;
+  }
+
+  .sidenav-icon {
+    width: 100px;
+  }
+}
+
+/* Home Featured */
+
+.home-featured {
+  display: flex;
+  width: 100%;
+  padding: 35px;
+}
+
+.home-featured-main-cover {
+  margin: 0px 10px;
+}
+
+.main-cover-story {
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  background-image: url(../images/1.jpeg);
+  background-size: 100%;
+  width: 400px;
+  height: 710px;
+  background-repeat: no-repeat;
+}
+
+.home-featured-gallery {
+  flex: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.home-featured-gallery-row {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.home-featured-gallery li {
+  float: left;
+}
+
+.gallery-story {
+  width: 200px;
+  height: 350px;
+  margin: -15px 20px 0px 10px;
+  background-size: 100%;
+}
+
+.featured-story1 {
+  background-image: url("../images/9.jpg");
+}
+
+.featured-story2 {
+  background-image: url("../images/2.jpg");
+}
+
+.featured-story3 {
+  background-image: url("../images/3.jpeg");
+}
+
+.featured-story4 {
+  background-image: url("../images/4.jpg");
+}
+
+.featured-story5 {
+  background-image: url("../images/5.jpg");
+}
+
+.featured-story6 {
+  background-image: url("../images/6.jpeg");
+}
+
+.featured-story7 {
+  background-image: url("../images/7.jpeg");
+}
+
+.featured-story8 {
+  background-image: url("../images/8.jpeg");
+}
+
+/* Home Navigation */
+
+.home-navigation {
+  width: 100%;
+  margin: 0px 20px 20px 50px;
+  padding: 15px 10px 15px 10px;
+  border: solid;
+  border-color: #eeecec;
+  border-width: 1px 0px 1px 0px;
+}
+
+/* Discover Stories */
+.discover-stories {
+  height: 500px;
+  margin: 0px 20px 20px 50px;
+  display: flex;
+}
+
+.discover-stories li {
+  float: left;
+}
+
+/* Story Share Post */
+
+.story-share {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0px 20px 0px 10px;
+}
+
+.story-share-header {
+  display: flex;
+  position: relative;
+}
+
+.profile-image {
+  width: 35px;
+  border-radius: 10px;
+}
+
+.story-share-user-info {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px 0px 5px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.story-share-header-username {
+  font-weight: bold;
+}
+
+.story-share-header-location {
+  font-weight: 100;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipse;
+  white-space: nowrap;
+}
+
+.story-options {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.story-share-body {
+  display: flex;
+  position: relative;
+  border: solid;
+  border-color: #e9e7e7;
+  border-width: 1px;
+  background: white;
+}
+
+.story-share-cover {
+  width: 50%;
+}
+
+.story-share-cover img {
+  object-fit: cover;
+  width: 190px;
+  height: 300px;
+}
+
+.story-share-about {
+  width: 50%;
+  margin-left: 5px;
+  position: relative;
+  padding: 0px 10px 10px 10px;
+}
+
+.story-share-about h3 {
+  font-size: 20px;
+  color: #2b2b2b;
+}
+
+.story-share-about p {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.story-share-feedback {
+  position: absolute;
+  bottom: 0px;
+}

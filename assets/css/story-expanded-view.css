@@ -1,0 +1,142 @@
+/* Overall */
+
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0C0C0C;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Side Comments Header */
+
+.story-share-header {
+    display: flex;
+    position: relative;
+}
+
+.profile-image {
+    width: 35px;
+    border-radius: 10px;
+}
+
+.story-share-user-info {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 2px 8px 8px;
+    font-size: 12px;
+
+}
+
+.story-share-header-username {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.story-share-header-update {
+    font-weight: 100;
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipse;
+    white-space: nowrap;
+}
+
+/* Side Comments */
+
+.feedback-bar {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 20px;
+    color: #818181;
+}
+
+.feedback-bar h1 {
+    color: #bdbbbb;
+    font-size: 23px;
+}
+
+.feedback-bar p {
+    color: #818181;
+    font-size: 16px;
+}
+
+.feedback-bar a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.feedback-bar a:hover {
+    color: #f1f1f1;
+}
+
+.feedback-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Story Card */
+
+.story-view {
+    display: flex;
+    margin: 0px;
+}
+
+.story-card-stack {
+    margin: auto;
+}
+
+.story-card-stack img {
+    float: right;
+    width: 35vw;
+    height: auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.story-strip {
+    float: right;
+    width: 300px;
+    background: #131313;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+
+.story-strip img {
+    width: 65%;
+    margin: 8px;
+    margin-left: 35px;
+}
+
+.inactive-card img {
+    opacity: 0.2;
+}
