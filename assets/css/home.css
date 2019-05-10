@@ -24,7 +24,7 @@ a {
 
 body {
   padding-top: 64px;
-  padding-left: 150px;
+  padding-left: 300px;
 }
 
 /* Sidenav */
@@ -87,7 +87,7 @@ body {
 }
 
 .sidenav-user-location {
-  color: white;
+  color: #96969c;
   font-size: 12px;
 }
 
@@ -101,12 +101,15 @@ body {
 }
 
 .sidenav-menu-item {
-  color: white;
+  color: #96969c;
   font-size: 12px;
+
 }
 
 .sidenav li:hover {
-  background-color: rgb(85, 85, 85);
+  background-color: #1a1a1d;
+  color: white;
+  transition: 1s;
 }
 
 .sidenav p {
@@ -144,7 +147,7 @@ body {
 }
 
 .topnav a:hover {
-  color: #040404;
+  color: #1f1f24;
   font-weight: 5px;
 }
 
@@ -156,7 +159,7 @@ body {
 }
 
 .topnav-menu a {
-  color: #5a5a5a;
+  color: #1f1f24;
 }
 
 .topnav-menu a:hover {
@@ -189,22 +192,26 @@ body {
 
   .sidenav {
     width: 60px;
+    transition: 1s;
   }
 
   .topnav {
     position: fixed;
-    left: 50px;
+    left: 70px;
     min-width: 900px;
+    transition: 1s;
   }
 
   .sidenav-brand {
     width: 60px;
+    transition: 1s;
   }
 
   .sidenav-brand-name {
     font-size: 18px;
     margin: 20px 8px;
     letter-spacing: 3px;
+    transition: 1s;
   }
 
   .sidenav-word {

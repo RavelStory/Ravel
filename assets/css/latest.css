@@ -3,6 +3,7 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -43,7 +44,7 @@ ul {
 
 .profile-image {
     width: 35px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .user-info {
